@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guessing Game</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hover.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">					
+    <h1>Crystal Value Guessing Game!</h1> 
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Current Game</h3>
+			  </div>
+			  <div class="panel-body">
+					<h4 id="target-number">Target Number XXX</h4>
+			  </div>
+			</div>
+
+			
+		</div>
+		<div class="col-md-4">
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Session Status</h3>
+			  </div>
+			  <div class="panel-body">
+					<h3 id="status1"></h3>
+					<h4 id="status2">status2</h4>
+					<h4 id="status3">status3</h4>
+			  </div>
+			</div>	
+		</div>
+
+		<div class="col-md-4">
+			<div class="panel panel-default">   
+				<div class="panel-heading">
+			    	<h3 class="panel-title">Game Log</h3>
+			  	</div>		       
+			  <table class="table table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Game Target</th>
+			        <th>Your Guess</th>
+			        <th>Status</th>
+			      </tr>
+			    </thead>
+			    <tbody id="game-log">
+			    </tbody>
+			  </table>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-2" style="background-color:#eee;">
+  				<div class="panel-heading">
+    				<h2 class="panel-title"><b>Select A Crystal<b></h2>
+  				</div>
+  				<div id="userChoice" class="panel-body">
+					<img id="choice" class="images hvr-grow" width="85" height="85" src="assets/images/crystal0.jpg" value=0><br>
+					<img id="choice" class="images hvr-grow" width="85" height="85" src="assets/images/crystal1.jpg" value=1><br>
+					<img id="choice" class="images hvr-grow" width="85" height="85" src="assets/images/crystal2.jpg" value=2><br>
+					<img id="choice" class="images hvr-grow" width="85" height="85" src="assets/images/crystal3.jpg" value=3><br>
+	  			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="jumbotron">
+				<h2 id="tot-score-status"><b>Your total score this game is:<b></h2>
+				<h2 style="text-align:center" id="current-score">Here is a paragraph</h2>
+				
+			</div>
+		</div>	
+	</div>
+</div>
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

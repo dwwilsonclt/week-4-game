@@ -1,0 +1,24 @@
+.images{
+	display: block;
+	border-spacing: 25px;
+}
+.jumbotron h1{
+	/*color: white;*/
+	text-align: center;
+}
+.jumbotron h4{
+
+	text-align: center;
+}
+.panel-body{
+	display: inline-block;
+}
+.label{
+	text-align: center;
+}
+#target-number{
+	text-align: center;
+}
+body {
+   background:#e0e0eb !important;
+}
